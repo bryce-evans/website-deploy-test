@@ -1,0 +1,638 @@
+/* 
+light orange ff833b
+red orange   EC3F12
+light blue   21addb
+royal blue   0094c5
+blue         007095
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: helvetica-neue;
+    src: url('/fonts/helvetica-neue/helvetica-neue-bold.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: helvetica-neue;
+    src: url('/fonts/helvetica-neue/helvetica-neue.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: merriweather;
+    src: url('/fonts/merriweather/Merriweather-Black.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: zona;
+    src: url('/fonts/zona/zona-extrabold.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Verlag";
+    src: url("//db.onlinewebfonts.com/t/26ffd45d7739310d9dd0f8bf7c513625.eot");
+    src: url("//db.onlinewebfonts.com/t/26ffd45d7739310d9dd0f8bf7c513625.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/26ffd45d7739310d9dd0f8bf7c513625.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/26ffd45d7739310d9dd0f8bf7c513625.woff") format("woff"), url("//db.onlinewebfonts.com/t/26ffd45d7739310d9dd0f8bf7c513625.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/26ffd45d7739310d9dd0f8bf7c513625.svg#Verlag Black") format("svg");
+    font-weight: 900;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: merriweather, serif; */
+    color: #333;
+    background-image: url("watercolor-paper-small.jpg");
+    background-size: 600px;
+    background-repeat: repeat;
+}
+
+::selection {
+    background: #EC3F12;
+    color: white;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: white;
+  }
+
+body {
+    margin: 0;
+}
+
+.header {
+    font-family: zona;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.header>div {
+    padding: 1ex;
+}
+
+.gray {
+    color: #444;
+}
+
+.hidden {
+    display: none;
+}
+
+.main {
+    /* margin-top: 80px; */
+    width: 100%;
+    position: relative;
+}
+
+
+
+.subtitle {
+    color: hsl(0, 0%, 35%);
+    ;
+}
+
+a {
+    font-weight: 700;
+    color: #EC3F12;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #c5340f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: zona, helvetica-neue, Helvetica, Arial, Sans-Serif;
+    font-weight: 900;
+    margin: 12px;
+    /* text-transform: uppercase; */
+}
+
+h1 {
+    font-size: 42pt;
+    background: -webkit-linear-gradient(#5a5a5a, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 32pt;
+}
+
+h1.gradient {
+    /* background: -webkit-linear-gradient( 45deg, #09009f, #00ff95 50%); */
+    background: -webkit-linear-gradient(45deg, #007095, #EC3F12 18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 1em;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0em;
+    }
+}
+
+@keyframes fadeInDelay {
+    0% {
+        opacity: 0;
+        top: 1em;
+    }
+
+    40% {
+        opacity: 0;
+        top: 1em;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0em;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 1em;
+    }
+
+    66% {
+        opacity: 0;
+        top: 1em;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0em;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+        margin-top: 1em;
+        margin-bottom: -1em;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.opacity0 {
+    opacity: 0;
+}
+.fadein {
+    animation: fadeIn ease 2s;
+}
+.fadeinDelay {
+    animation: fadeInDelay ease 2s;
+    /* -webkit-animation: fadeIn ease 0.3s;
+    -moz-animation: fadeIn ease 0.3s;
+    -o-animation: fadeIn ease 0.3s;
+    -ms-animation: fadeIn ease 0.3s; */
+
+    /* -webkit-transform: translate(0, -60px);
+    transform: translate(0, -60px);
+    
+    -webkit-transition: -webkit-transform .3s linear;
+    transition: transform .3s linear, opacity .2s ease-in-out, -webkit-transform .3s linear;
+    transition-delay: 0.3s; */
+}
+
+
+.section {
+    /* text-align: center; */
+    margin: 0.5em auto -3em auto;
+    padding: 2em 0;
+    min-height: 62ex;
+    width: 100%;
+    position: relative;
+}
+
+.section:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg, #654ea3, #eaafc8);
+    transform: skewY(-8deg);
+}
+
+.section.footer{
+    min-height: 20ex;
+}
+
+.section-content {
+    max-width: 50em;
+    margin: 0 auto;
+    position: relative;
+}
+
+.blue.section {
+    background-color: #00abe4;
+    color: #eee;
+}
+
+
+.orange.section {
+    background-color: #f19500;
+    color: #eee;
+}
+
+
+.red.section {
+    background-color: #c94000;
+    color: #eee;
+}
+
+.pink.section {
+    background-color: #c5006c;
+    color: #eee;
+}
+
+
+.dark.section {
+    background-color: #1e1c20;
+    color: #eee;
+}
+
+.card {
+    padding: 1ex;
+    border-radius: 4px;
+    border: 1px solid #fcfcfc;
+    width: 25%;
+    display: inline-block;
+    min-height: 20ex;
+    margin: 2ex;
+}
+
+.dark .card {
+    border-color: #aaa;
+    ;
+}
+
+.two-col {
+    display: flex;
+}
+
+.col {
+    flex: 50%;
+}
+
+.col-small {
+    flex: 32%;
+}
+
+.col-big {
+    flex: 65%;
+}
+
+.cropped-img {
+    width: 218px;
+    height: 320px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+}
+
+:root {
+    --width: 100vw;
+    --full-width: 100vw;
+
+    @media (min-width: 42em) {
+        --width: 42rem;
+    }
+
+    --angle: -11deg;
+    /*-----------------
+    Magic Number Alert:
+    
+    the 0.09719 is calculated by this formula:
+    tan(11°) / 2
+    11° is the current skewY value.
+    ------------------*/
+    --magic-number: 0.07027;
+    --skew-padding: calc(var(--width) * var(--magic-number));
+    --clip-padding: calc(var(--full-width) * var(--magic-number));
+}
+
+
+.content {
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: 1.5em;
+    position: relative;
+
+}
+
+
+/* .zigzag {
+	background-image: repeating-linear-gradient(46deg, rgb(242, 13, 13) 13px, rgb(242, 13, 13) calc(26px), rgb(207, 252, 230) calc(26px), rgb(207, 252, 230) calc(39px), rgb(10, 26, 41) calc(39px), rgb(10, 26, 41) calc(52px)), none;
+	background-size: 28px 100%, 28px 100%;
+}
+
+.zigzag:after {
+    content: '';
+    display: block;
+	background-image: repeating-linear-gradient(calc(-46deg), rgb(242, 13, 13) 13px, rgb(242, 13, 13) calc(26px), rgb(207, 252, 230) calc(26px), rgb(207, 252, 230) calc(39px), rgb(10, 26, 41) calc(39px), rgb(10, 26, 41) calc(52px)), none;
+	background-size: 28px 100%, 28px 100%;
+	-webkit-mask-image: repeating-linear-gradient(to right, rgb(0, 0, 0) 28px, rgb(0, 0, 0) calc(56px), rgba(0, 0, 0, 0) calc(56px), rgba(0, 0, 0, 0) calc(84px));
+	mask-image: repeating-linear-gradient(to right, rgb(0, 0, 0) 28px, rgb(0, 0, 0) calc(56px), rgba(0, 0, 0, 0) calc(56px), rgba(0, 0, 0, 0) calc(84px));
+} */
+
+.striped {
+    color: #fcfcfc;
+    background-size: .5em .5em, 100% 100%;
+}
+.striped h2 {
+    text-shadow: -1px -1px 1px rgb(0 0 0 / 35%);
+}
+.striped.blue {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.05) 50%, 0, transparent 100%),
+        linear-gradient(-135deg, rgb(0, 182, 238), rgb(0, 100, 139));
+}
+
+.striped.green {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.05) 50%, 0, transparent 100%),
+        linear-gradient(-135deg, #0cc, rgb(0, 94, 131));
+}
+
+.striped.lime {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.05) 50%, 0, transparent 100%),
+        linear-gradient(-135deg, #b8f317, #00c97c);
+}
+
+.striped.orange {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.05) 50%, 0, transparent 100%),
+        linear-gradient(-135deg, #ff9d00, #dd5800);
+}
+
+.striped.red {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.05) 50%, 0, transparent 100%),
+        linear-gradient(-135deg, #ff4800, #b40000);
+}
+
+.striped.black {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.1) 50%, 0, transparent 100%),
+        linear-gradient(-135deg, #333333, #242424);
+}
+
+.diagonal {
+    position: relative;
+    /* margin-top: calc( ( var(--clip-padding) * -1 ) - 2px ); */
+
+    padding: calc((var(--clip-padding) * 2) - (var(--clip-padding) - var(--skew-padding))) 0 4em;
+    clip-path: polygon(0% calc(var(--clip-padding) * 2),
+            100% 0%,
+            100% 100%,
+            0% 100%);
+    -webkit-clip-path: polygon(0% calc(var(--clip-padding) * 2),
+            100% 0%,
+            100% 75%,
+            0% 100%);
+}
+
+.diagonal-top-only {
+    position: relative;
+    /* margin-top: calc( ( var(--clip-padding) * -1 ) - 2px ); */
+
+    padding: calc((var(--clip-padding) * 2) - (var(--clip-padding) - var(--skew-padding))) 0 4em;
+    clip-path: polygon(0% calc(var(--clip-padding) * 2),
+            100% 0%,
+            100% 100%,
+            0% 100%);
+    -webkit-clip-path: polygon(0% calc(var(--clip-padding) * 2),
+            100% 0%,
+            100% 100%,
+            0% 100%);
+}
+
+.diagonal-bottom-only:before {
+    content: '';
+    position: relative;
+    /* margin-top: calc( ( var(--clip-padding) * -1 ) - 2px ); */
+
+    padding: calc((var(--clip-padding) * 2) - (var(--clip-padding) - var(--skew-padding))) 0 4em;
+    clip-path: polygon(0% calc(var(--clip-padding) * 2),
+            100% 0%,
+            100% 100%,
+            0% 100%);
+    -webkit-clip-path: polygon(0% calc(var(--clip-padding) * 2),
+            100% 0%,
+            100% 80%,
+            0% 100%);
+}
+
+
+/*  */
+
+#debug_uvs {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#debug_uvs>div {
+    border: 1px solid #444;
+    position: relative;
+    display: inline-block;
+}
+
+#debug_uvs>div>canvas {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#debug_uvs>div>canvas.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+/* 
+.section:nth-child(2) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 40px 400px;
+    border-color: transparent transparent #007bff transparent;
+} */
+
+
+/* https://fossheim.io/writing/posts/css-text-gradient/ */
+
+.my-gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: #CA4246;
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #21addb 25%, #007095 25%, #007095 50%, #8E5346 50%, #8E5346 75%, #EC3F12 75%);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.my-gradient-text-2 {
+    /* Fallback: Set a background color. */
+    background-color: #ee681b;
+    /* Create the gradient. */
+    /* background-image: linear-gradient( 45deg, #21addb 25%, #007095 25%, #007095 50%, #141414 50%, #141414 75%, #2800db 75%); */
+    background-image: linear-gradient(45deg, #21addb 20%, #007095 20%, #007095 40%, #003041 40%, #003041 60%, #141414 60%, #141414 80%, #2800db 80%);
+    /* background-image: linear-gradient( 45deg, #21addb 20%, #007095 20%, #007095 40%, #141414 40%, #141414 60%, #91260b 60%, #91260b 80%, #EC3F12 80%); */
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease backwards;
+}
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: #CA4246;
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #8B9862 50%, #8B9862 66.666%, #476098 66.666%, #476098 83.333%, #A7489B 83.333%);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.gradient-text:hover {
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+
+/* Move the background and make it smaller. */
+
+
+/* Animation shown when entering the page and after the hover animation. */
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+
+    40% {
+        background-size: 650%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+
+/* Move the background and make it larger. */
+
+
+/* Animation shown when hovering over the text. */
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+
+    80% {
+        background-size: 650%;
+    }
+
+    100% {
+        background-size: 650%;
+    }
+}
+
+
+/* h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 6em;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: -0.25em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 605px;
+} */
